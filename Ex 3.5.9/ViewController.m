@@ -45,7 +45,22 @@
 
 
 - (void)openDB{
-    NSString *dbFilePath = [[NSBundle mainBundle] pathForResource:@"db2" ofType:@"sqlite"];
+    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *dbFilePath = [docPath stringByAppendingPathComponent:@"db2.splite"];
+    NSFileManager *fm = [NSFileManager defaultManager];
+    BOOL existFile = [fm fileExistsAtPath:dbFilePath];
+    if(existFile == NO)
+    {
+        NSString *defalutDBPath =[[[NSBundle mainBundle]resourcePath] stringByAppendingPathComponent:@"db2.sqlite"];
+        NSError *error;
+        BOOL success = [fm copyItemAtPath:defalutDBPath toPath:dbFilePath error:&error];
+        
+        if(!success)
+            NSAssert1(0, @"Failed to create writable database file with message '%@'.", [error localizedDescription]);
+    }
+    
+
+    
     int ret = sqlite3_open([dbFilePath UTF8String], &db);
     NSAssert1(SQLITE_OK==ret,@"Error on opening Database : %s", sqlite3_errmsg(db));
 }

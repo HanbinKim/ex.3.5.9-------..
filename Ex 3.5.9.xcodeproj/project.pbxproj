@@ -21,9 +21,9 @@
 		0009E6C01883D5CD00660346 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0009E6A21883D5CD00660346 /* UIKit.framework */; };
 		0009E6C81883D5CD00660346 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0009E6C61883D5CD00660346 /* InfoPlist.strings */; };
 		0009E6CA1883D5CD00660346 /* Ex_3_5_9Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0009E6C91883D5CD00660346 /* Ex_3_5_9Tests.m */; };
-		0009E6D41883D6DA00660346 /* db2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0009E6D31883D6DA00660346 /* db2.sqlite */; };
 		0009E6D61883D77200660346 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0009E6D51883D77200660346 /* libsqlite3.dylib */; };
 		0009E6D91883D7BD00660346 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 0009E6D81883D7BD00660346 /* Movie.m */; };
+		0009E6DB1883E6A700660346 /* db2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0009E6DA1883E6A700660346 /* db2.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +56,10 @@
 		0009E6C51883D5CD00660346 /* Ex 3.5.9Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ex 3.5.9Tests-Info.plist"; sourceTree = "<group>"; };
 		0009E6C71883D5CD00660346 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0009E6C91883D5CD00660346 /* Ex_3_5_9Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ex_3_5_9Tests.m; sourceTree = "<group>"; };
-		0009E6D31883D6DA00660346 /* db2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db2.sqlite; sourceTree = "<group>"; };
 		0009E6D51883D77200660346 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		0009E6D71883D7BD00660346 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		0009E6D81883D7BD00660346 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		0009E6DA1883E6A700660346 /* db2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db2.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +121,7 @@
 		0009E6A41883D5CD00660346 /* Ex 3.5.9 */ = {
 			isa = PBXGroup;
 			children = (
-				0009E6D31883D6DA00660346 /* db2.sqlite */,
+				0009E6DA1883E6A700660346 /* db2.sqlite */,
 				0009E6AD1883D5CD00660346 /* AppDelegate.h */,
 				0009E6AE1883D5CD00660346 /* AppDelegate.m */,
 				0009E6B01883D5CD00660346 /* Main.storyboard */,
@@ -242,7 +242,7 @@
 			files = (
 				0009E6B71883D5CD00660346 /* Images.xcassets in Resources */,
 				0009E6A91883D5CD00660346 /* InfoPlist.strings in Resources */,
-				0009E6D41883D6DA00660346 /* db2.sqlite in Resources */,
+				0009E6DB1883E6A700660346 /* db2.sqlite in Resources */,
 				0009E6B21883D5CD00660346 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +474,7 @@
 				0009E6CF1883D5CD00660346 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0009E6D01883D5CD00660346 /* Build configuration list for PBXNativeTarget "Ex 3.5.9Tests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +483,7 @@
 				0009E6D21883D5CD00660346 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
